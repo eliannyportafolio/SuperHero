@@ -1,11 +1,10 @@
 function GeneraGrafico (datos) {
-console.log(datos);
-
+// console.log(datos);
     var options = {
         title: {
             text: `Estadisticas de Poder Para:${datos.name}`
         },
-
+        backgroundColor: "#f6d365",
         animationEnabled: true,
         data: [{
             type: "pie",
@@ -13,8 +12,8 @@ console.log(datos);
             toolTipContent: "<b>{label}</b>: {y}%",
             showInLegend: "true",
             legendText: "{label}",
-            indexLabelFontSize: 16,
-            indexLabel: "{label} - {y}%",
+            indexLabelFontSize: 13,
+            indexLabel: "{label}-{y}%",
             dataPoints: [
                 { y: datos.powerstats.intelligence, label: "Intelligence" },
                 { y: datos.powerstats.strength, label: "strength" },
