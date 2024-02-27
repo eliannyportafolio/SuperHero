@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     // recibiendo id super heroe del formulario 
     $("#buscarSuperHeroe").on("click", function () {
@@ -8,6 +9,7 @@ $(document).ready(function () {
             url:`https://www.superheroapi.com/api.php/4905856019427443/${superHero}`,
             dataType: "json",
             success: function (datos) {
+                GeneraGrafico(datos)
             //   console.log(datos.biography.first-appearance);
                 $("#Nomb-Super").text(datos.name);
                 $("#pub").text(datos.biography.publisher);
@@ -24,8 +26,8 @@ $(document).ready(function () {
     });
 });
 
-
-// la urel del profe:
-
-
+// la url que envio el profe:
 // https://www.superheroapi.com/api.php/4905856019427443/213
+
+
+
