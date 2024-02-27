@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/png">
+    <title>Super Hero</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/favicon.ico" alt=" imagen de super heroe"
+                    style="height: 30px; margin-right: 10px;"> <span class="fw-bold">SuperHero</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 col-sm-10 col-md-8 col-lg-6 mx-auto d-flex justify-content-lg-center mt-4">
+                <img src="assets/img/sh1.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div>
+            <form>
+                <div class="mb-3 text-center">
+                    <h2>Encuentra tu Super Hero</h2>
+                </div>
+                <div class="mb-3 col-10 col-sm-10 col-md-8 col-lg-6 mx-auto">
+                    <h3>Ingresa el número del SuperHero a Buscar</h3>
+                </div>
+                <div class="mb-3 col-10 col-sm-10 col-md-8 col-lg-6 mx-auto d-flex justify-content-lg-center">
+                    <input type="number" class="form-control" id="superHero">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" id="buscarSuperHeroe">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card mb-3" style="max-width: 600px;">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="..." id="imgSuperHero" class="img-fluid rounded-start" alt="imagen del super heroe">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h3 class="card-title">SuperHero Encontrado</h3>
+                        <div class="row mt-2 mb-2 border-bottom">
+                            <div class="col-5">
+                                <strong class="card-title">Nombre:</strong>
+                            </div>
+                            <div class="col-7">
+                                <p class="card-text" id="Nomb-Super"></p>
+                            </div>
+                        </div>
+                            <div class="row mb-2 border-bottom">
+                                <div class="col-5">
+                                    <strong class="card-title">Publicado por:</strong>
+                                </div>
+                                <div class="col-7">
+                                    <p class="card-text" id="pub"></p>
+                                </div>
+                            </div>
+                            <div class="row mb-2 border-bottom">
+                                <div class="col-5 ">
+                                    <strong class="card-title">Conexiones:</strong>
+                                </div>
+                                <div class="col-7">
+                                    <p class="card-text" id="conexion"></p>
+                                </div>
+                            </div>
+                            <div class="row mb-2 border-bottom">
+                                <div class="col-5">
+                                    <strong class="card-title">Ocupacion:</strong>
+                                </div>
+                                <div class="col-7">
+                                    <p class="card-text" id="ocupacion"></p>
+                                </div>
+                            </div>
+
+                            <div class="row mb-2 border-bottom">
+                                <div class="col-6">
+                                    <strong class="card-title">Primera Aparicion:</strong>
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-text" id="primeraAparicion"></p>
+                                </div>
+                            </div>
+                            <div class="row mb-2 border-bottom">
+                                <div class="col-5">
+                                    <strong class="card-title">Altura:</strong>
+                                </div>
+                                <div class="col-7">
+                                    <p class="card-text" id="altura"></p>
+                                </div>
+                            </div>
+                            <div class="row mb-2 border-bottom">
+                                <div class="col-5">
+                                    <strong class="card-title">Peso:</strong>
+                                </div>
+                                <div class="col-7 ">
+                                    <p class="card-text" id="peso"></p>
+                                </div>
+                            </div>
+                            <div class="row mb-2 ">
+                                <div class="col-5 ">
+                                    <strong class="card-title">Alianzas:</strong>
+                                </div>
+                                <div class="col-7">
+                                    <p class="card-text" id="alianzas"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/j-query.js"></script>
+        <script src="assets/js/script.js"></script>
+</body>
+
+</html>
